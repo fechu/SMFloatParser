@@ -1,38 +1,6 @@
-# SMFloatParser
-
-A small class that parses a string and returns it's float value. 
-
-## Examples
-
-	"12%" 	-> 0.12
-	"1/2"	-> 0.50
-	"1,2"	-> 1.20
-	"3"		-> 3.00
-	"2.3"	-> 2.3
-	
-## Installation
-
-If you are using `git` for version control in your project, you can use 
-
-	git submodule add https://github.com/fechu/SMFloatParser.git <path>
-	
-to add it as a submodule.
-
-As an alternative you can just drop the `*.h`, `*.mm` and `.cpp` into your Xcode project and start using them.
-
-
-
-## Usage
-
-1. Import `SMFloatParser`
-2. Call the `parse:` method with string
-3. There's no step 3
-
-## License (MIT)
-
 The MIT License (MIT)
 
-Copyright (c) 2014 Sandro Meier & Roman Brunner
+Copyright (c) 2014 Sandro Meier
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
