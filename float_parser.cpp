@@ -118,6 +118,15 @@ float float_parser::parse_float(string float_string)
         float_string.at(position) = '.';
     }
     
-    // We are now able to parse the float
-    return fabs(stof(float_string));
+    // Try to parse the float with stof.
+    // We need to put it into a try/catch block becuase it throws an exception if it cannot parse
+    // anything in the string.
+    float result = __FLT_MAX__;
+    try {
+        result = fabs(stof(float_string));
+    } catch (exception& e) {
+        // Just ignore the exception
+    }
+    
+    return result;
 }
